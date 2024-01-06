@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Devsbook</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1"/>
+    <link rel="stylesheet" href="http://localhost/devsbook/public/assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="http://localhost/devsbook/public/assets/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="<?=$base;?>"><img src="http://localhost/devsbook/public/assets/images/astroworld_logo.png" /></a>
+            </div>
+            <div class="head-side">
+                <div class="head-side-left">
+                    <div class="search-area">
+                        <form method="GET" action="<?=$base;?>/pesquisa">
+                            <input type="search" placeholder="Pesquisar" name="s" />
+                        </form>
+                    </div>
+                </div>
+                <div class="head-side-middle">
+                    <a href="">Biblioteca</a>
+                    <a href="">Astro<b>Galeria</b></a>
+                    <a href="">Astro<b>Loja</b></a>
+                    <a href="">Blog</b></a>
+                </div>
+                <div class="head-side-right">
+                    <a href="<?=$base;?>/perfil" class="user-area">
+                        <div class="user-area-text"><?=$loggedUser->name;?></div>
+                        <div class="user-area-icon">
+                            <img src="http://localhost/devsbook/public/media/avatars/<?=$loggedUser->avatar;?>" />
+                        </div>
+                    </a>
+                    <a href="<?=$base;?>/sair" class="user-logout">
+                        <img src="http://localhost/devsbook/public/assets/images/power_white.png" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>

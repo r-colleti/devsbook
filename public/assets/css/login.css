@@ -1,0 +1,99 @@
+@import 'defaults.css';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Helvetica;
+    font-size:13px;
+    background-color:#121212;
+    margin:0;
+    height: 100vh;
+}
+.container {
+    max-width:1040px;
+    margin:auto;
+}
+header {
+    background-color:#121212;
+    height:150px;
+    position:relative;
+    z-index:99;
+}
+header .container {
+    display:flex;
+    height:inherit;
+    justify-content: center;
+    align-items: center;
+}
+header img {
+    height:30px;
+}
+header a {
+    display: flex;
+}
+
+.form_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+form {
+    max-width:400px;
+    width: 100%;
+    background-color: #FFF;
+    border:1px solid #c9cacc;
+    border-radius:5px;
+    padding:20px;
+    height: auto;
+    box-shadow: 0 0 40px black;
+}
+form label {
+    display: block;
+}
+form input {
+    display: block;
+}
+form .input {
+    font-size:15px;
+    height:40px;
+    width: 100%;
+    outline: 0;
+    border:0;
+    background-color:#EEE;
+    border-radius:10px;
+    padding:15px;
+    margin-bottom:10px;
+}
+form .input:focus {
+    background-color:#DDD;
+}
+form .button {
+    border:0;
+    padding:10px 20px;
+    background-color:#4a76a8;
+    border-radius:10px;
+    color:#FFF;
+    font-size:15px;
+    margin-bottom:10px;
+    cursor:pointer;
+    box-shadow:0px 0px 3px #999;
+}
+form .button:hover {
+    background-color:#477dbb;
+}
+form a {
+    text-decoration:none;
+    color:#4a76a8;
+}
+.flash {
+    border:2px solid red;
+    background-color:red;
+    color:white;
+    padding:10px;
+    margin-bottom:20px;
+}

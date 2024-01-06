@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1"/>
+    <link rel="stylesheet" href="http://localhost/devsbook/public/assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="http://localhost/devsbook/public/assets/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="<?=$base;?>"><img src="http://localhost/devsbook/public/assets/images/astroworld_logo.png" /></a>
+            </div>
+            <div class="head-side">
+                <div class="head-side-left">
+                    <div class="search-area">
+                        <form method="GET" action="<?=$base;?>/pesquisa">
+                            <input type="search" placeholder="Pesquisar" name="s" />
+                        </form>
+                    </div>
+                </div>
+                <div class="head-side-middle">
+                    <a href="">Biblioteca</a>
+                    <a href="">Astro<b>Galeria</b></a>
+                    <a href="">Astro<b>Loja</b></a>
+                    <a href="">Blog</b></a>
+                </div>
+                <div class="head-side-right">
+                    <a href="<?=$base;?>/perfil" class="user-area">
+                        <div class="user-area-text"><?=$loggedUser->name;?></div>
+                        <div class="user-area-icon">
+                            <img src="http://localhost/devsbook/public/media/avatars/<?=$loggedUser->avatar;?>" />
+                        </div>
+                    </a>
+                    <a href="<?=$base;?>/sair" class="user-logout">
+                        <img src="http://localhost/devsbook/public/assets/images/power_white.png" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="galeria-biblioteca-loja-background">
+
+        <section class="container galeria-biblioteca-loja-container">
+
+            <h1 class="page-tittle">Astro<b>Loja</b></h1>
+
+            <section class="galeria-biblioteca-loja-section">
+                
+                <section class="g-b-l-section-left">
+                    
+                    <div class="g-b-l-div-upload">
+                        <h3>VENDA SEU PRODUTO:</h3>
+                        <P>Adicionar Produto.</P>
+                        <a href=""><button>ADICIONAR PRODUTO</button></a>
+                    </div>
+
+                    <div class="g-b-l-propaganda-div">
+                        <img src="http://localhost/devsbook/public/assets/images/propaganda_g_b_l.jpg">
+                    </div>
+
+                    <div class="g-b-l-propaganda-div">
+                        <img src="http://localhost/devsbook/public/assets/images/propaganda_g_b_l.jpg">
+                    </div>
+
+                </section>
+
+                <section class="g-b-l-section-right">
+                    
+                    <div class="g-b-l-section-right-search">
+                        <input class="input-search-name" placeholder="Buscar Produto" type="text" name="">
+                        <select class="input-search-categoria" placeholder="Categoria">
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                            <option value="mercedes">Mercedes</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                    </div>
+
+                    <section class="g-b-l-vitrine">
+
+                        <div class="astroloja-div">
+                            <div class="astroloja-div-img">
+                                <div class="astroloja-div-img-categoria">TELESCÓPIO</div>
+                                <img class="astroloja-div-imagem-item" src="http://localhost/devsbook/public/assets/images/OIP.jpg">
+                            </div>
+                            <div class="astroloja-div-infos">
+                                <div class="produto-titulo">
+                                    <h3>Telescópio GSO 300mm</h3>
+                                </div>
+                                <div class="produto-localizacao">
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    <p>Americana/SP</p>
+                                </div>
+                                <p class="produto-preco">R$ 8.000,00</p>
+                            </div>
+                        </div>
+
+                        <div class="astroloja-div">
+                            <div class="astroloja-div-img">
+                                <div class="astroloja-div-img-categoria">TELESCÓPIO</div>
+                                <img class="astroloja-div-imagem-item" src="http://localhost/devsbook/public/assets/images/OIP.jpg">
+                            </div>
+                            <div class="astroloja-div-infos">
+                                <div class="produto-titulo">
+                                    <h3>Telescópio GSO 300mm</h3>
+                                </div>
+                                <div class="produto-localizacao">
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    <p>Americana/SP</p>
+                                </div>
+                                <p class="produto-preco">R$ 8.000,00</p>
+                            </div>
+                        </div>
+
+                        <div class="astroloja-div">
+                            <div class="astroloja-div-img">
+                                <div class="astroloja-div-img-categoria">TELESCÓPIO</div>
+                                <img class="astroloja-div-imagem-item" src="http://localhost/devsbook/public/assets/images/OIP.jpg">
+                            </div>
+                            <div class="astroloja-div-infos">
+                                <div class="produto-titulo">
+                                    <h3>Telescópio GSO 300mm</h3>
+                                </div>
+                                <div class="produto-localizacao">
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    <p>Americana/SP</p>
+                                </div>
+                                <p class="produto-preco">R$ 8.000,00</p>
+                            </div>
+                        </div>
+
+                        <div class="astroloja-div">
+                            <div class="astroloja-div-img">
+                                <div class="astroloja-div-img-categoria">TELESCÓPIO</div>
+                                <img class="astroloja-div-imagem-item" src="http://localhost/devsbook/public/assets/images/OIP.jpg">
+                            </div>
+                            <div class="astroloja-div-infos">
+                                <div class="produto-titulo">
+                                    <h3>Telescópio GSO 300mm</h3>
+                                </div>
+                                <div class="produto-localizacao">
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    <p>Americana/SP</p>
+                                </div>
+                                <p class="produto-preco">R$ 8.000,00</p>
+                            </div>
+                        </div>
+
+                        <div class="astroloja-div">
+                            <div class="astroloja-div-img">
+                                <div class="astroloja-div-img-categoria">TELESCÓPIO</div>
+                                <img class="astroloja-div-imagem-item" src="http://localhost/devsbook/public/assets/images/OIP.jpg">
+                            </div>
+                            <div class="astroloja-div-infos">
+                                <div class="produto-titulo">
+                                    <h3>Telescópio GSO 300mm</h3>
+                                </div>
+                                <div class="produto-localizacao">
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    <p>Americana/SP</p>
+                                </div>
+                                <p class="produto-preco">R$ 8.000,00</p>
+                            </div>
+                        </div>
+
+                        <div class="astroloja-div">
+                            <div class="astroloja-div-img">
+                                <div class="astroloja-div-img-categoria">TELESCÓPIO</div>
+                                <img class="astroloja-div-imagem-item" src="http://localhost/devsbook/public/assets/images/OIP.jpg">
+                            </div>
+                            <div class="astroloja-div-infos">
+                                <div class="produto-titulo">
+                                    <h3>Telescópio GSO 300mm</h3>
+                                </div>
+                                <div class="produto-localizacao">
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    <p>Americana/SP</p>
+                                </div>
+                                <p class="produto-preco">R$ 8.000,00</p>
+                            </div>
+                        </div>
+                        
+                    </section>
+
+                </section>
+
+            </section>
+
+        </section>
+        
+    </section>
+
+    <div class="modal">
+        <div class="modal-inner">
+            <a rel="modal:close">&times;</a>
+            <div class="modal-content"></div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    const BASE = '<?=$base;?>';
+    </script>
+    <script type="text/javascript" src="<?=$base;?>/assets/js/script.js"></script>
+    <script type="text/javascript" src="<?=$base;?>/assets/js/vanillaModal.js"></script>
+</body>
+<footer>
+
+    <div class="footer-content">
+
+        <div class="footer-logo">
+            <img src="http://localhost/devsbook/public/assets/images/astroworld_logo.png">
+        </div>
+
+        <div class="footer-links">
+
+            <a href="">Home</a>
+            <a href="">Biblioteca</a>
+            <a href="">Astro<b>Galeria</b></a>
+            <a href="">Astro<b>Loja</b></a>
+            <a href="">Blog</b></a>
+            
+        </div>
+        
+    </div>
+
+    <div class="footer-sub">
+
+        <div class="footer-sub-copy">
+            <p>AstroWorld 2023 | Ad Astra per Aspera.</p>
+            <img src="http://localhost/devsbook/public/assets/images/star_footer.png">
+        </div>
+
+        <img class="footer-brasil-flag" src="http://localhost/devsbook/public/assets/images/brasil_flag_footer.png">
+        
+    </div>
+
+</footer>
+</html>
